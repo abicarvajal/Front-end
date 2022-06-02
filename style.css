@@ -1,0 +1,89 @@
+.header{
+    background-color: white;
+    margin: 0px;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    top: 0px;
+    left: 0px;
+    border-bottom: 1px solid rgb(194, 190, 190);  
+}
+
+ /* se recomiendo aplicar box sizing a todos los elemento s por iguala. Aqui se aplican a todos los elementos */
+*{
+    box-sizing: border-box;
+}
+
+.header h2 {
+    text-align: center;
+}
+
+body{
+    background-color: white;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-container{
+    width: auto;
+    border: 1px solid #b3b0b0;
+    margin: 0 auto;
+    background-color: white;
+    margin-top: 120px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 300px;
+    margin-right: 35px;
+    
+}
+/* porcentajes se usan para que siempre se mantenga la posicion aspecto igual */
+
+.input{
+    background-color: white;
+    padding: 10px; 
+    border:  1px solid gray;
+    border-radius: 6px;
+    height: 40px;
+}
+
+.button{
+    background-color: yellow;
+    border: 2px solid black;
+    padding: 10px;
+    height: 40px;
+}
+
+.button:hover{
+    background-color: white;
+    color: black;
+}
+
+.center-content{
+    display: flex;
+    justify-content: center;
+}
+
+/* ver como funciona el display flex */
+
+@media (max-width:600px){
+    .content-container{
+        width: 100%;
+    }
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 20px;
+    background-color: white;
+    border: 1px solid #b3b0b0
+}
+
+.sidebar-content p{
+    font-weight: bold;
+    text-align: center;
+} 
+
